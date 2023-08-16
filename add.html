@@ -3,13 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/add.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="css/add.css" rel="stylesheet" />
     <title>내 건강 등록하기</title>
   </head>
   <body>
@@ -155,28 +149,31 @@
       <!-- nav -->
       <div class="nav">
         <div class="nav_main">
-          <a href=""><img src="./img/home.png" alt="home" /></a>
+          <a href="{% url 'board:board-main' %}">
+            <img src="./img/home.png" alt="home" />
+          </a>
           <p>홈</p>
         </div>
 
         <div class="nav_info">
-          <a href=""><img src="./img/report.png" alt="report" /></a>
+          <a href="{% url 'board:board-main' %}">
+            <img src="./img/report.png" alt="report" /></a>
           <p>건강정보</p>
         </div>
 
-        <a href=""><img src="./img/nav_X.png" alt="nav_X" id="nav_X" /></a> <!--이미지 변경-->
+        <img src="./img/nav_X.png" alt="nav_X" id="nav_X" /></a>
 
         <div class="nav_board">
-          <a href="{% url 'board:board-main' %}"
-            ><img src="./img/board.png" alt="board"
-          /></a>
+          <a href="{% url 'board:board-main' %}">
+            <img src="./img/board.png" alt="board"/>
+          </a>
           <p>질문게시판</p>
         </div>
 
         <div class="nav_my">
           <a href="{% url 'mypage:my' %}"
-            ><img src="./img/my.png" alt="my"
-          /></a>
+            ><img src="./img/my.png" alt="my"/>
+          </a>
           <p>내 정보</p>
         </div>
       </div>

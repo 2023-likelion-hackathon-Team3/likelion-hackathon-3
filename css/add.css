@@ -116,7 +116,6 @@ p {
 }
 
 /*나브바 고정*/
-
 .nav {
   display: flex;
   justify-content: space-around;
